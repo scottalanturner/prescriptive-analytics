@@ -32,7 +32,7 @@ By the end of this lesson, you will understand:
 This lesson includes three interactive Jupyter notebooks. Each notebook is self-contained and includes extensive explanations, code examples, and visualizations.
 
 ### Notebook 1: Analytics Continuum
-**File**: `01_Analytics_Continuum.ipynb`
+**File**: `lesson01_concept01_analytics_continuum.ipynb`
 
 This notebook demonstrates the three types of analytics using a retail store scenario. You'll see how:
 - Descriptive analytics reveals patterns in historical data
@@ -41,14 +41,12 @@ This notebook demonstrates the three types of analytics using a retail store sce
 
 **Key Learning**: Understanding how the three types of analytics build on each other.
 
-[📓 Open in Jupyter](./01_Analytics_Continuum.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/Lesson01%20Introduction/01_Analytics_Continuum.ipynb)
-
-> **Note**: To use the Google Colab links, replace `YOUR_USERNAME` and `YOUR_REPO` with your GitHub username and repository name. Alternatively, you can upload the notebook directly to Google Colab.
+[📓 Open in Jupyter](./lesson01_concept01_analytics_continuum.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson01/lesson01_concept01_analytics_continuum.ipynb)
 
 ---
 
 ### Notebook 2: Visualizing Tradeoffs
-**File**: `02_Visualizing_Tradeoffs.ipynb`
+**File**: `lesson01_concept02_visualizing_tradeoffs.ipynb`
 
 This notebook explores the fundamental concept of tradeoffs in decision-making. Using a budget allocation scenario, you'll learn:
 - What tradeoffs are and why they're unavoidable
@@ -57,12 +55,12 @@ This notebook explores the fundamental concept of tradeoffs in decision-making. 
 
 **Key Learning**: You cannot optimize everything simultaneously - you must make choices about what to prioritize.
 
-[📓 Open in Jupyter](./02_Visualizing_Tradeoffs.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/Lesson01%20Introduction/02_Visualizing_Tradeoffs.ipynb)
+[📓 Open in Jupyter](./lesson01_concept02_visualizing_tradeoffs.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson01/lesson01_concept02_visualizing_tradeoffs.ipynb)
 
 ---
 
 ### Notebook 3: Objectives and Constraints
-**File**: `03_Objectives_and_Constraints.ipynb`
+**File**: `lesson01_concept03_objectives_and_constraints.ipynb`
 
 This notebook demonstrates how objectives and constraints shape recommendations. You'll see:
 - How changing objectives (e.g., maximize revenue vs. maximize profit) changes recommendations
@@ -71,7 +69,7 @@ This notebook demonstrates how objectives and constraints shape recommendations.
 
 **Key Learning**: Models recommend based on what you tell them - your objectives and constraints determine the recommendation.
 
-[📓 Open in Jupyter](./03_Objectives_and_Constraints.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/Lesson01%20Introduction/03_Objectives_and_Constraints.ipynb)
+[📓 Open in Jupyter](./lesson01_concept03_objectives_and_constraints.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson01/lesson01_concept03_objectives_and_constraints.ipynb)
 
 ---
 
@@ -85,8 +83,7 @@ This notebook demonstrates how objectives and constraints shape recommendations.
 
 ### Option 2: Google Colab
 1. Click the "Open in Google Colab" link above each notebook
-2. **Note**: You'll need to update the GitHub URL in the links above with your actual repository path
-3. Alternatively, upload the notebook file directly to Google Colab
+2. Alternatively, upload the notebook file directly to Google Colab
 
 ### Option 3: Direct Upload to Colab
 1. Go to [Google Colab](https://colab.research.google.com/)
