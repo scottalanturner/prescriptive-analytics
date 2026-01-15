@@ -1,0 +1,21 @@
+origin_city,airline,cost,num_stops,flight_duration_hours,departure_time_convenience
+New York,Delta,485.00,0,5.5,8.5
+New York,United,425.00,1,7.5,7.2
+New York,American,445.00,0,5.8,8.8
+New York,Spirit,285.00,1,8.2,6.5
+New York,JetBlue,395.00,0,5.3,8.2
+Boston,Delta,495.00,0,5.7,8.3
+Boston,United,435.00,1,7.8,7.0
+Boston,American,455.00,0,5.9,8.5
+Boston,Spirit,295.00,1,8.5,6.2
+Boston,JetBlue,405.00,0,5.5,8.0
+Washington DC,Delta,475.00,0,5.4,8.6
+Washington DC,United,415.00,1,7.3,7.3
+Washington DC,American,435.00,0,5.6,8.7
+Washington DC,Spirit,275.00,1,8.0,6.8
+Washington DC,JetBlue,385.00,0,5.2,8.4
+Atlanta,Delta,425.00,0,4.8,8.9
+Atlanta,United,365.00,1,6.8,7.5
+Atlanta,American,385.00,0,5.0,8.8
+Atlanta,Spirit,255.00,1,7.5,7.0
+Atlanta,JetBlue,345.00,0,4.7,8.6

@@ -1,0 +1,17 @@
+lodging_type,name,cost_per_night,rating,distance_to_venue_miles,amenities_score,max_occupancy,co_workers_interested
+Hotel,Grand Las Vegas Hotel,185.00,4.7,0.2,8.5,2,
+Hotel,Stratosphere Tower,95.00,3.6,1.8,6.2,2,
+Hotel,Caesars Palace,320.00,4.8,0.5,9.5,2,
+Hotel,MGM Grand,210.00,4.5,0.3,8.8,2,
+Hotel,Excalibur Hotel,75.00,3.4,0.4,5.8,2,
+Hotel,Bellagio,385.00,4.9,0.6,9.8,2,
+Hotel,Luxor Hotel,88.00,3.7,0.5,6.5,2,
+Hotel,Venetian Resort,295.00,4.6,0.7,9.2,2,
+Airbnb,Modern Downtown Loft,45.00,4.3,2.1,7.5,4,2
+Airbnb,Strip View Apartment,52.00,4.1,1.5,7.2,3,1
+Airbnb,Cozy Conference Condo,38.00,3.9,2.8,6.8,4,3
+Airbnb,Luxury Penthouse Suite,68.00,4.6,1.2,8.5,5,1
+Airbnb,Budget-Friendly Studio,32.00,3.5,3.2,5.5,2,2
+Airbnb,Spacious 3BR House,58.00,4.4,2.5,8.0,6,2
+Airbnb,Convenient 2BR Condo,42.00,4.0,1.8,7.0,4,1
+Airbnb,Executive Suite Downtown,55.00,4.2,1.9,7.8,3,2
