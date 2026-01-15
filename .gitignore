@@ -3,4 +3,5 @@ Source Docs/
 
 # Assignment example solutions (instructor reference only)
 Assignments/**/assignment_example_solution.ipynb
+Assignments/**/.instructor/
 
