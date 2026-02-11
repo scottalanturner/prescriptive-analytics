@@ -1,5 +1,8 @@
 Slides/
 Source Docs/
+image_gen_outputs/
+.venv/
+image_gen/.env
 
 # Assignment example solutions (instructor reference only)
 Assignments_Explainers
