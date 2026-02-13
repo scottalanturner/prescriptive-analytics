@@ -202,6 +202,24 @@ Prescriptive analytics is a tool to support decision-making, not replace it. Thr
 
 ---
 
+## Assignments
+
+### [Assignment 1: Conference Travel Decision Analysis](./Assignments/01ConferenceTravelDecisionAnalysis/)
+
+**Overview**: Apply decision framing from Lesson 2 to a conference travel decision: decision variables, objectives vs constraints, hard vs soft constraints, tradeoffs, and a PuLP optimization model.
+
+[📋 Go to Assignment 1 →](./Assignments/01ConferenceTravelDecisionAnalysis/)
+
+---
+
+### [Assignment 2: Resource Allocation Under Uncertainty](./Assignments/02ResourceAllocationSensitivity/)
+
+**Overview**: Apply prescriptive analytics in your own field: choose a resource allocation problem, create a synthetic dataset, build an optimization model, run sensitivity analysis and validation, then respond to a stakeholder change of mind with an updated model and comparison.
+
+[📋 Go to Assignment 2 →](./Assignments/02ResourceAllocationSensitivity/)
+
+---
+
 ## Getting Started
 
 1. **Prerequisites**: Basic familiarity with Python is helpful but not required. The notebooks are designed to be accessible to beginners. See [Lesson 1 README](./Lesson01/README.md) for detailed setup instructions.
