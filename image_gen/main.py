@@ -17,15 +17,9 @@ CONFIG_PATH = IMAGE_GEN_DIR / "config.json"
 # Load .env from image_gen folder so API key is available
 load_dotenv(IMAGE_GEN_DIR / ".env")
 
-# Google AI Studio / Gemini Images (Nano Banana) - official model from ai.google.dev/gemini-api/docs/image-generation
+# Google AI Studio / Gemini Images - official model from ai.google.dev/gemini-api/docs/image-generation
 GEMINI_IMAGE_MODEL = "gemini-2.5-flash-image"
 GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta"
-
-# Primary env var name for the Google AI Studio key.
-API_KEY_ENV = "GOOGLE_AI_STUDIO_API_KEY"
-# Fallback to the old name if present, so existing .env still works.
-LEGACY_API_KEY_ENV = "NANOBANANA_API_KEY"
-
 
 def load_config() -> dict:
     """Load configuration from config.json."""
@@ -41,10 +35,10 @@ def load_config() -> dict:
     return cfg
 
 def get_api_key() -> str:
-    api_key = os.getenv(API_KEY_ENV) or os.getenv(LEGACY_API_KEY_ENV)
+    api_key = os.getenv("GOOGLE_AI_STUDIO_API_KEY")
     if not api_key:
         raise RuntimeError(
-            f"Environment variable {API_KEY_ENV} (or legacy {LEGACY_API_KEY_ENV}) is not set. "
+            "Environment variable GOOGLE_AI_STUDIO_API_KEY is not set. "
             "Set your Google AI Studio API key in the environment before running."
         )
     return api_key
@@ -140,6 +134,7 @@ def generate_image_with_gemini(prompt: str, api_key: str, dest_path: Path) -> No
 
     image_bytes = base64.b64decode(b64_data)
     dest_path.parent.mkdir(parents=True, exist_ok=True)
+    # Overwrite if file already exists
     with open(dest_path, "wb") as f:
         f.write(image_bytes)
 
@@ -187,8 +182,8 @@ def build_pages_8_up(
     page_width_px = int(page_width_in * dpi)
     page_height_px = int(page_height_in * dpi)
 
-    # Grid: 4 columns x 2 rows
-    cols = 4
+    # Grid: 2 columns x 2 rows (4 images per page)
+    cols = 2
     rows = 2
 
     margin_px = int(0.25 * dpi)  # 0.25 inch margins
@@ -226,7 +221,7 @@ def build_pages_8_up(
 
         pages.append(page)
 
-    # Save as multi-page PDF
+    # Save as multi-page PDF (overwrites if file already exists)
     output_pdf_path.parent.mkdir(parents=True, exist_ok=True)
 
     first_page, *rest_pages = pages
@@ -259,6 +254,17 @@ def main() -> None:
 
     prompts = parse_prompts(input_file)
     print(f"Found {len(prompts)} prompts.")
+
+    # Optional: limit number of prompts via env var (e.g. IMAGE_GEN_LIMIT=4 for a test run)
+    limit_str = os.getenv("IMAGE_GEN_LIMIT")
+    if limit_str:
+        try:
+            limit = int(limit_str)
+            if limit > 0:
+                prompts = prompts[:limit]
+                print(f"Limiting to first {limit} prompts for this run.")
+        except ValueError:
+            print(f"WARNING: IMAGE_GEN_LIMIT is not a valid integer: {limit_str!r}")
 
     # Generate images (comment out this line if you already have images and just want to rebuild the PDF)
     image_paths = generate_all_images(prompts, api_key, images_dir)
