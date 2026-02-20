@@ -8,3 +8,5 @@ image_gen/.env
 Assignments_Explainers
 Assignments/**/.instructor/
 
+# Midterm project
+Assignments/Midterm-Project//assignment_exemplar.ipynb
