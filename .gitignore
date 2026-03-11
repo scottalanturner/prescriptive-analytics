@@ -12,4 +12,5 @@ Assignments/**/.instructor/
 Assignments/Midterm-Project/assignment_exemplar.ipynb
 
 .DS_Store
+.ds_store
 .gitignore
