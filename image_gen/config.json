@@ -1,7 +1,7 @@
 {
   "//": "Edit these paths/names as needed. Paths are relative to the project root unless absolute.",
-  "input_file": "Slides/lesson07_image-prompts.md",
+  "input_file": "Slides/lesson08_image-prompts.md",
   "output_folder": "image_gen_outputs",
-  "output_folder_name": "lesson07",
-  "pdf": "lesson07_pictures.pdf"
+  "output_folder_name": "lesson08",
+  "pdf": "lesson08_pictures.pdf"
 }
