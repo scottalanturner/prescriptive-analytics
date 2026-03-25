@@ -4,6 +4,8 @@ image_gen_outputs/
 .venv/
 image_gen/.env
 
+.claude/
+
 # Assignment example solutions (instructor reference only)
 Assignments_Explainers
 Assignments/**/.instructor/
