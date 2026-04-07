@@ -16,7 +16,7 @@ You will turn in two deliverables: a Jupyter notebook containing your full analy
 
 ## The Scenario
 
-You have been asked by a VP at your organization (real or realistic) to evaluate a recurring decision problem and provide a data-driven recommendation. The VP is intelligent but not technical. They care about outcomes, tradeoffs, and confidence — not model structure or code. Your job is to build a credible analysis and present it clearly in 10 minutes.
+You have been asked by a VP at your organization (real or realistic) to evaluate a recurring decision problem and provide a data-driven recommendation. The VP is intelligent but not technical. They care about outcomes, tradeoffs, and confidence — not model structure or code. Your job is to build a credible analysis and present it clearly in 5–7 minutes.
 
 ---
 
@@ -132,15 +132,21 @@ Your slides tell the story to the VP. They are not a printout of your notebook. 
 
 ## The Presentation
 
-**Format:** 10 minutes of presentation + 5 minutes of Q&A, delivered via Zoom screen share
+**Format:** 5–7 minutes of presentation + 2 minutes of Q&A, delivered via Zoom screen share
 **Share:** Your slides only — not your notebook
 **Audience:** A VP who knows the organization but has not seen your analysis
 
 **Lead with the recommendation, not the method.** Decision-makers want to know what to do before they want to know how you figured it out. Open with the problem and your conclusion, then build the supporting case in the middle slides, then close with the recommendation and next step.
 
-**Prepare for Q&A.** The VP (your instructor) and your classmates will ask questions. At minimum, be ready to defend: why your model's assumptions are reasonable, which finding surprised you most, and what you would do differently with more time or data.
+**Prepare for Q&A.** The VP (your instructor) and your classmates will ask questions. At minimum, be ready to defend:
+
+- Why your model's assumptions are reasonable
+- Which finding surprised you most
+- What you would do differently with more time or data
 
 **What "briefing a VP" means in practice:** Avoid jargon. Never say "my objective function" — say "what the model is trying to minimize." Never say "binary variable" — say "a yes/no decision." The goal is for a non-technical person to fully understand what you recommend and why.
+
+**Peer engagement — Blackboard discussion.** A class discussion thread will be open during presentations. After each presenter finishes and before the next begins, you have 2 minutes to post a reply to the thread with two things: (1) the presenter's recommendation in one sentence, and (2) one question or pushback you would raise. Do this for every classmate. This is graded on completion and counts toward your presentation score — see the rubric.
 
 ---
 
@@ -171,7 +177,7 @@ Pick a decision problem in your current job, a prior role, or an industry you ar
 - Does every chart have a title and labeled axes?
 - Does your opening slide communicate the decision and why it matters in under 30 seconds?
 - Does your closing slide end with a clear action, not a vague conclusion?
-- Have you rehearsed the 10-minute timing at least once?
+- Have you rehearsed the 5–7 minute timing at least once?
 
 ---
 
