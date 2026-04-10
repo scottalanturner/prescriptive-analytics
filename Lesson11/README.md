@@ -1,215 +1,122 @@
-# Lesson 11: Simulation and Risk Analysis
+# Lesson 11: AI-Enhanced Prescriptive Analytics and Simulation
 
-Welcome to Lesson 11 of Prescriptive Analytics! This lesson combines optimization with simulation to test solutions under uncertainty and assess risk.
+**Position in course:** Week 14 — final content lesson before project presentations  
+**Theme:** Extending prescriptive analytics with simulation, AI/ML pipelines, generative AI tools, and ethical responsibility
+
+---
 
 ## Learning Objectives
 
-By the end of this lesson, you will understand:
+By the end of this lesson, students will be able to:
 
-- **Simulation as Risk Testing**: How simulation tests solutions under uncertainty
-- **Deterministic Risks**: Risks that exist even in deterministic models
-- **Monte Carlo Intuition**: How Monte Carlo simulation works and why it's useful
-- **Interpreting Simulation Outputs**: How to understand and communicate simulation results
-- **Optimization Plus Simulation**: How to combine optimization with simulation
-- **Robust vs Fragile Solutions**: How to identify solutions that work well under uncertainty
-- **Visualizing Plans vs Histories**: How to compare planned outcomes with actual results
-- **Visualization Types**: Different ways to visualize simulation results
-- **AI Assistance Validation**: How to validate AI-assisted optimization solutions
-- **Bias in AI Suggestions**: How to identify and address bias in AI-generated solutions
+1. Use Monte Carlo simulation to test a decision against thousands of realistic scenarios and interpret the resulting outcome distribution
+2. Apply an optimize-then-simulate workflow to stress-test a recommended plan and compare candidate decisions by reliability, not just expected value
+3. Explain how ML predictions feed into prescriptive optimization models and identify where that pipeline can break down
+4. Use generative AI (LLMs) as a modeling partner for formulation, interpretation, and communication — with appropriate human validation at each step
+5. Apply a four-stage ethical audit framework to identify and address bias, constraint omission, and accountability gaps in AI-assisted decision systems
 
-## Core Concepts
-
-### 1. Simulation as Risk Testing
-- Simulation tests solutions under uncertainty
-- It reveals how solutions perform in different scenarios
-- It helps assess risk and identify vulnerabilities
-
-### 2. Deterministic Risks
-- Risks exist even in deterministic models
-- Parameter uncertainty creates risk
-- Understanding deterministic risks helps assess solution reliability
-
-### 3. Monte Carlo Intuition
-- Monte Carlo simulation samples from probability distributions
-- It generates many scenarios to assess outcomes
-- It provides probabilistic insights into solution performance
-
-### 4. Interpreting Simulation Outputs
-- Simulation produces distributions of outcomes
-- Understanding these distributions is critical
-- Results must be communicated clearly
-
-### 5. Optimization Plus Simulation
-- Optimization finds good solutions
-- Simulation tests solutions under uncertainty
-- Combining both provides robust solutions
-
-### 6. Robust vs Fragile Solutions
-- **Robust**: Solutions that work well across scenarios
-- **Fragile**: Solutions that break down under uncertainty
-- Preferring robust solutions when uncertainty is high
-
-### 7. Visualizing Plans vs Histories
-- Comparing planned outcomes with actual results
-- Understanding gaps between plans and reality
-- Learning from differences to improve models
-
-### 8. Visualization Types
-- Different visualizations serve different purposes
-- Choosing the right visualization aids understanding
-- Effective visualization communicates insights clearly
-
-### 9. AI Assistance Validation
-- AI-assisted solutions must be validated
-- Checking for errors, biases, and unrealistic results
-- Ensuring AI suggestions are implementable
-
-### 10. Bias in AI Suggestions
-- AI systems can introduce bias
-- Identifying and addressing bias is critical
-- Ensuring fair and unbiased recommendations
+---
 
 ## Notebooks
 
-This lesson includes ten interactive Jupyter notebooks. Each notebook is self-contained and includes extensive explanations, code examples, and visualizations.
+One notebook per lesson section. Each teaches a single concept. The notebooks include **plain-language explanations** before each step (written for analytics students who are not programmers): what the code is computing, what to look for in the output, and how the charts support the decision story.
 
-### Notebook 1: Simulation as Risk Testing
-**File**: `lesson11_concept01_simulation_as_risk_testing.ipynb`
+| # | File | Topic | Section |
+|---|------|--------|---------|
+| 1 | `lesson11_concept01_monte_carlo_simulation.ipynb` | Monte Carlo simulation for testing decisions under uncertainty | Section 1 |
+| 2 | `lesson11_concept02_optimize_then_simulate.ipynb` | The optimize-then-simulate workflow; side-by-side plan comparison | Section 2 |
+| 3 | `lesson11_concept03_ml_prescriptive_workflows.ipynb` | ML demand forecasting feeding inventory optimization; the handoff problem | Section 3 |
+| 4 | `lesson11_concept04_genai_modeling_partner.ipynb` | GenAI as formulation, interpretation, and communication assistant; validation rule | Section 4 |
+| 5 | `lesson11_concept05_ethical_considerations.ipynb` | Bias in AI-assisted hiring; four-stage ethical audit; fairness constraints | Section 5 |
 
-This notebook introduces simulation as a tool for testing solutions under uncertainty. You'll learn:
-- How simulation tests solutions in different scenarios
-- How simulation reveals risks and vulnerabilities
-- Why simulation complements optimization
+### Open in Jupyter or Google Colab
 
-**Key Learning**: Simulation tests solutions under uncertainty, revealing how solutions perform in different scenarios and helping assess risk.
+Use the same Colab URL pattern as other lessons: `main` branch on `scottalanturner/prescriptive-analytics`.
 
-[📓 Open in Jupyter](./lesson11_concept01_simulation_as_risk_testing.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept01_simulation_as_risk_testing.ipynb)
-
----
-
-### Notebook 2: Deterministic Risks
-**File**: `lesson11_concept02_deterministic_risks.ipynb`
-
-This notebook explores risks that exist even in deterministic models. You'll see:
-- How parameter uncertainty creates risk
-- Why deterministic models have risks
-- How to assess deterministic risks
-
-**Key Learning**: Risks exist even in deterministic models. Parameter uncertainty creates risk, and understanding this helps assess solution reliability.
-
-[📓 Open in Jupyter](./lesson11_concept02_deterministic_risks.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept02_deterministic_risks.ipynb)
+| # | Jupyter (local) | Google Colab |
+|---|-----------------|--------------|
+| 1 | [Open notebook](./lesson11_concept01_monte_carlo_simulation.ipynb) | [Open in Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept01_monte_carlo_simulation.ipynb) |
+| 2 | [Open notebook](./lesson11_concept02_optimize_then_simulate.ipynb) | [Open in Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept02_optimize_then_simulate.ipynb) |
+| 3 | [Open notebook](./lesson11_concept03_ml_prescriptive_workflows.ipynb) | [Open in Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept03_ml_prescriptive_workflows.ipynb) |
+| 4 | [Open notebook](./lesson11_concept04_genai_modeling_partner.ipynb) | [Open in Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept04_genai_modeling_partner.ipynb) |
+| 5 | [Open notebook](./lesson11_concept05_ethical_considerations.ipynb) | [Open in Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept05_ethical_considerations.ipynb) |
 
 ---
 
-### Notebook 3: Monte Carlo Intuition
-**File**: `lesson11_concept03_monte_carlo_intuition.ipynb`
+## Notebook Summaries
 
-This notebook explains how Monte Carlo simulation works. You'll learn:
-- How Monte Carlo simulation samples from distributions
-- Why Monte Carlo simulation is useful
-- How to interpret Monte Carlo results
+### concept01 — Monte Carlo Simulation
 
-**Key Learning**: Monte Carlo simulation samples from probability distributions to generate many scenarios. This provides probabilistic insights into solution performance.
-
-[📓 Open in Jupyter](./lesson11_concept03_monte_carlo_intuition.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept03_monte_carlo_intuition.ipynb)
+**Scenario:** Hospital shift staffing — how many nurses per shift?  
+**Teaches:** The difference between a deterministic model (one answer) and Monte Carlo simulation (a distribution of outcomes). Students run 1,000 demand scenarios across four staffing levels, read the resulting distributions, and use tail risk (P5, P95) alongside mean cost to make a risk-informed staffing decision.  
+**Key concepts:** Deterministic vs. simulation, outcome distribution, tail risk, when to use simulation  
+**Packages:** numpy, matplotlib, pandas
 
 ---
 
-### Notebook 4: Interpreting Simulation Outputs
-**File**: `lesson11_concept04_interpreting_simulation_outputs.ipynb`
+### concept02 — Optimize Then Simulate
 
-This notebook demonstrates how to interpret simulation results. You'll see:
-- How to understand distributions of outcomes
-- How to identify key insights from simulation
-- How to communicate simulation results effectively
-
-**Key Learning**: Simulation produces distributions of outcomes. Understanding these distributions is critical for assessing solution performance and communicating results.
-
-[📓 Open in Jupyter](./lesson11_concept04_interpreting_simulation_outputs.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept04_interpreting_simulation_outputs.ipynb)
+**Scenario:** Weekly production planning with uncertain demand  
+**Teaches:** The two-step workflow: optimize first (get a principled starting point), then simulate (test robustness under uncertainty). Students compare three candidate production plans — lean, optimal, and buffered — under the same 1,000 demand scenarios and learn that mean outcome alone is not the whole story.  
+**Key concepts:** Optimize-then-simulate pipeline, side-by-side plan comparison, tail risk vs. mean, common mistakes  
+**Packages:** numpy, matplotlib, pandas, pulp
 
 ---
 
-### Notebook 5: Optimization Plus Simulation
-**File**: `lesson11_concept05_optimization_plus_simulation.ipynb`
+### concept03 — ML in Prescriptive Workflows
 
-This notebook demonstrates how to combine optimization with simulation. You'll learn:
-- How optimization finds good solutions
-- How simulation tests solutions under uncertainty
-- How combining both provides robust solutions
-
-**Key Learning**: Optimization finds good solutions; simulation tests them under uncertainty. Combining both provides robust solutions that work well across scenarios.
-
-[📓 Open in Jupyter](./lesson11_concept05_optimization_plus_simulation.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept05_optimization_plus_simulation.ipynb)
+**Scenario:** Grocery store inventory optimization fed by a demand forecast model  
+**Teaches:** How ML predictions (demand forecasts, risk scores) become optimization inputs — and what happens when those predictions are wrong. Students train a simple linear regression forecast, feed the point forecast into an inventory optimizer, observe the "handoff problem" when the forecast is off, and then improve the process by passing forecast uncertainty into simulation.  
+**Key concepts:** Data → ML prediction → optimization → recommendation pipeline, handoff problem, end-to-end validation, what ML cannot do  
+**Packages:** numpy, matplotlib, pandas, scikit-learn, pulp
 
 ---
 
-### Notebook 6: Robust vs Fragile Solutions
-**File**: `lesson11_concept06_robust_vs_fragile_solutions.ipynb`
+### concept04 — GenAI as a Modeling Partner
 
-This notebook explores how to identify robust versus fragile solutions. You'll see:
-- How to identify robust solutions
-- How to identify fragile solutions
-- When to prefer robust over optimal
-
-**Key Learning**: Robust solutions work well across scenarios; fragile solutions break down under uncertainty. When uncertainty is high, robust solutions are often preferable.
-
-[📓 Open in Jupyter](./lesson11_concept06_robust_vs_fragile_solutions.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept06_robust_vs_fragile_solutions.ipynb)
+**Scenario:** Call center staffing optimization  
+**Teaches:** Three practical GenAI roles — formulation assistant (translating a business problem into model components), interpretation assistant (explaining model output in plain English), and communication assistant (drafting stakeholder memos). Each role is demonstrated with a simulated LLM response followed by a structured human validation step showing what the LLM got right and wrong.  
+**Key concepts:** Formulation / interpretation / communication roles, validation rule, trust-but-verify, professional GenAI competency  
+**Packages:** numpy, matplotlib, pandas, pulp  
+**Note:** LLM responses are simulated as pre-written text; no API key required.
 
 ---
 
-### Notebook 7: Visualizing Plans vs Histories
-**File**: `lesson11_concept07_visualizing_plans_vs_histories.ipynb`
+### concept05 — Ethical Considerations
 
-This notebook demonstrates how to compare planned outcomes with actual results. You'll learn:
-- How to visualize planned versus actual outcomes
-- How to understand gaps between plans and reality
-- How to learn from differences to improve models
-
-**Key Learning**: Comparing planned outcomes with actual results reveals gaps and helps improve models. Understanding these differences is essential for continuous improvement.
-
-[📓 Open in Jupyter](./lesson11_concept07_visualizing_plans_vs_histories.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept07_visualizing_plans_vs_histories.ipynb)
+**Scenario:** AI-assisted hiring — ML scoring + optimization for interview slot allocation  
+**Teaches:** How bias in historical hiring data propagates through an ML model into an optimization recommendation, producing discriminatory outcomes even when group membership is not an explicit model input. Students observe the biased pipeline in action, apply a four-stage ethical audit framework, then add a fairness constraint and compare outcomes with and without it.  
+**Key concepts:** Bias in training data, disparate impact, four-stage ethical audit (before / during / after / AI-specific), fairness constraints, constraint omission as an ethical choice, human accountability  
+**Packages:** numpy, matplotlib, pandas, pulp
 
 ---
 
-### Notebook 8: Visualization Types
-**File**: `lesson11_concept08_visualization_types.ipynb`
+## Deduplication Notes
 
-This notebook explores different ways to visualize simulation results. You'll see:
-- Different types of visualizations for simulation results
-- When to use each visualization type
-- How effective visualization communicates insights
+The following topics are covered in earlier lessons and are deliberately excluded from Lesson 11 notebooks:
 
-**Key Learning**: Different visualizations serve different purposes. Choosing the right visualization aids understanding and communicates insights clearly.
+- Sensitivity / what-if analysis → Lesson 5
+- Robust vs. fragile decisions as a standalone concept → Lesson 5
+- General model validation techniques → Lesson 5
+- Gantt charts → Lesson 9
+- Sankey diagrams → Lesson 6
+- Visualization types as a standalone topic → not repeated in Lesson 11
 
-[📓 Open in Jupyter](./lesson11_concept08_visualization_types.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept08_visualization_types.ipynb)
-
----
-
-### Notebook 9: AI Assistance Validation
-**File**: `lesson11_concept09_ai_assistance_validation.ipynb`
-
-This notebook demonstrates how to validate AI-assisted optimization solutions. You'll learn:
-- How to check AI suggestions for errors
-- How to validate that solutions are realistic
-- How to ensure AI suggestions are implementable
-
-**Key Learning**: AI-assisted solutions must be validated. Checking for errors, biases, and unrealistic results ensures solutions are implementable and reliable.
-
-[📓 Open in Jupyter](./lesson11_concept09_ai_assistance_validation.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept09_ai_assistance_validation.ipynb)
+Where Lesson 11 builds on prior material, the connection is noted explicitly in notebook introductions so students see continuity rather than repetition.
 
 ---
 
-### Notebook 10: Bias in AI Suggestions
-**File**: `lesson11_concept10_bias_in_ai_suggestions.ipynb`
+## Files to Remove
 
-This notebook explores how to identify and address bias in AI-generated solutions. You'll see:
-- How AI systems can introduce bias
-- How to identify bias in AI suggestions
-- How to ensure fair and unbiased recommendations
+The following old notebooks are superseded and should be deleted:
 
-**Key Learning**: AI systems can introduce bias. Identifying and addressing bias is critical for ensuring fair and unbiased recommendations.
-
-[📓 Open in Jupyter](./lesson11_concept10_bias_in_ai_suggestions.ipynb) | [🔗 Open in Google Colab](https://colab.research.google.com/github/scottalanturner/prescriptive-analytics/blob/main/Lesson11/lesson11_concept10_bias_in_ai_suggestions.ipynb)
-
----
-
+- `lesson11_concept01_simulation_as_risk_testing.ipynb`
+- `lesson11_concept02_deterministic_risks.ipynb`
+- `lesson11_concept03_monte_carlo_intuition.ipynb`
+- `lesson11_concept04_interpreting_simulation_outputs.ipynb`
+- `lesson11_concept05_optimization_plus_simulation.ipynb`
+- `lesson11_concept06_robust_vs_fragile_solutions.ipynb`
+- `lesson11_concept07_visualizing_plans_vs_histories.ipynb`
+- `lesson11_concept08_visualization_types.ipynb`
+- `lesson11_concept09_ai_assistance_validation.ipynb`
+- `lesson11_concept10_bias_in_ai_suggestions.ipynb`
